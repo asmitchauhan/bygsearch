@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fredoka:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BygSearch</title>
+</head>
+<body>
+    <div class="center">
+        <h1>BygSearch</h1>
+        <input type="text" id="input" value placeholder="Search here"><a onclick="getValue()" id="myAnchor"><i   class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Fredoka', sans-serif;
+    }
+    h1{
+        color: #fff;
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+    input{
+        outline: none;
+        border: none;
+        background-color: #fff;
+        height: 40px;
+        width: calc(100% - 60px);
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 20px  0 0 20px;
+        position: relative;
+    }
+    i{  
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        position: relative;
+        font-size: 20px;
+        top: -10px;
+        border-radius: 0 20px 20px 0;
+    }
+    i::before{
+        color: #000;
+        position: relative;
+        top: 10px;
+        cursor: pointer;
+    }
+    .center{
+        width: 90%;
+        margin: auto;
+        margin-top: 200px;
+        text-align: center;
+    }
+</style>
+<script>
+    function getValue() {
+                var x = document.getElementById('input').value;
+               if (x != "") {
+                document.getElementById("myAnchor").href = "https://www.google.com/search?q=" + x;
+               }
+               else{
+                
+               }
+            }
+</script>
+</html>
